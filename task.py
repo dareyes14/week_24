@@ -29,12 +29,14 @@ def game_questions():
 
 Game_Start = input("Hello, Welcome to the math game! Ready to play? y/n: ")
 
-if input == "y":
+if Game_Start == "y":
     print("Great! Lets begin... ")
+    delay()
     print("You will be given multiple questions and you have 3 seconds to type in your number response. You lose if you can't answer all questions or if you run out of time.")
+    delay()
     print("Ready?")
 
-elif input == "n":
+elif Game_Start == "n":
     print("Please play again another time!")
 
 else:
