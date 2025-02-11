@@ -38,32 +38,7 @@ def wrong():
     print("Please play again another time!")
     answer = False
     return answer 
-
-
-
-while answer is True:
-
-
-    q1 = input("What is 1 + 1?: ")
-    if q1 == "2":
-        print("Correct!")
-        delay(3)
-    else:
-            wrong()
-
-
-    q2 = input("What is 4 * 7?: ")
-    if q2 == "28":
-        print("Correct!")
-        delay(3)
-    else:
-            wrong()
-
-
-
-
-
-
+    
 
 
 Game_Opener = input("Hello, Welcome to the math game! Ready to play? y/n: ") #game start up info
@@ -79,12 +54,21 @@ if Game_Opener == "y":
    
 elif Game_Opener == "n":
         print("Please play again another time!")
-        pass 
+        quit
 
 else:
-        print("Please type y or n")
+        print("Please type y or n... Restart Program --> ")
+        quit()
 
-questions = {q1, q2}
+for function in Game_Opener:
+    if Game_Opener == False:
+        quit()
+
+
+
+
+
+
 
 Game_Start = input("Are you ready to play? y/n: ")
 
@@ -96,23 +80,45 @@ if Game_Start == "y":
     print("2...")
     delay()
     print("1...")
-    delay
+    delay()
     print("Go!")
     delay()
     print(" ")
 
 elif Game_Start == "n":
     print("Please play again another time!")
+    quit()
 
 else:
     print("Please type y or n")
 
+q1 = input("What is 1 + 1?: ")
+if q1 == "2":
+        print("Correct!")
+    
+    
+else:
+    wrong()
+    
+
+q2 = input("What is 4 * 7?: ")
+if q2 == "28":
+        print("Correct!")
+      
+        
+else:
+    wrong()
+            
+    
+questions = [q1, q2]
 
 for question in questions:
     
-    
-    
-    
-    
-    while questions == wrong():
-return
+    if questions == False:
+        quit()
+
+    while question == True:
+        delay()
+        pass
+
+
