@@ -6,7 +6,7 @@
 #check system to make sure each problem is correct
 #figure out how to call each question and ask in the correct order ("correct!")
 #congratulatory system at the end 
-
+#3 second timer into loss function
 # q3 = ["What is 54 - 13?: "]
 # q4 = ["What is 50/25?: "]
 # q5 = ["What is 88 + 101?: "]
@@ -39,6 +39,9 @@ def wrong():
     answer = False
     return answer 
     
+# def loss():
+#     while delay 
+#     end()
 
 
 Game_Opener = input("Hello, Welcome to the math game! Ready to play? y/n: ") #game start up info
@@ -54,7 +57,7 @@ if Game_Opener == "y":
    
 elif Game_Opener == "n":
         print("Please play again another time!")
-        quit
+        quit()
 
 else:
         print("Please type y or n... Restart Program --> ")
@@ -95,6 +98,7 @@ else:
 q1 = input("What is 1 + 1?: ")
 if q1 == "2":
         print("Correct!")
+        
     
     
 else:
